@@ -3,14 +3,14 @@ asgiref==3.4.1
 atomicwrites==1.4.0
 attrs==21.2.0
 autopep8==1.5.7
-certifi==2022.12.7
-charset-normalizer==2.0.3
+certifi==2022.12.7; python_version >= '3.6'
+charset-normalizer==2.0.3; python_full_version >= '3.5.0'
 click==8.0.1
 colorama==0.4.4
 fastapi==0.66.1
 gunicorn==22.0.0; python_version >= '3.7'
 h11==0.12.0
-idna==3.2
+idna==3.7; python_version >= '3.5'
 iniconfig==1.1.1
 numpy==1.22.0
 packaging==24.0; python_version >= '3.7'
@@ -24,7 +24,7 @@ pyparsing==2.4.7
 pytest==6.2.4
 python-dateutil==2.8.2
 pytz==2021.1
-requests==2.26.0
+requests==2.31.0; python_version >= '3.7'
 setuptools==65.6.3; python_version >= '3.7'
 six==1.16.0
 starlette==0.14.2
