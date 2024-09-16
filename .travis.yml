@@ -3,11 +3,14 @@ python:
   - "3.8"
 # command to install dependencies
 install:
-  - pip install -r app/requirements.txt
+  - pip install pipenv
+  - pipenv install
 # command to run tests
 script:
   - pytest app/tests/test_get_data.py
   - pytest app/tests/test_helper.py
+  # - pytest app/tests/test_covid_integrator_api_v1.py # Required paths fixed
+  # - pytest app/tests/test_covid_integrator_api_v2.py # Required paths fixed
 # codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
